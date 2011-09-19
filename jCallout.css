@@ -1,9 +1,10 @@
 .callout {
     position: absolute;
     margin: 18px 0;    
-       padding: 5px;
-   /*width:300px;*/
-   text-align:center;
+    padding: 5px;
+    z-index:99;
+    /*width:300px;*/
+    text-align:center;
     border: 1px solid #7992B0;
     background-color: #8F8F8F;
     color:#FFFFFF;
@@ -32,6 +33,7 @@
     _border-right-color: pink;
     _border-left-color: pink;
     _filter: chroma(color=pink);
+    z-index:99;
 }
 
 .callout .notch_right{
@@ -51,6 +53,7 @@
     _border-right-color: pink;
     _border-left-color: pink;
     _filter: chroma(color=pink);
+    z-index:99;
 }
 
 .callout .notch_top{
@@ -70,6 +73,7 @@
     _border-right-color: pink;
     _border-left-color: pink;
     _filter: chroma(color=pink);
+    z-index:99;
 }
 
 .callout .notch_left{
@@ -86,4 +90,5 @@
     _border-right-color: pink;
     _border-left-color: pink;
     _filter: chroma(color=pink);
+    z-index:99;
 }
