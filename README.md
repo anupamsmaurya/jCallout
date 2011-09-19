@@ -2,7 +2,7 @@ Callout is a balloon div that connects text, symbols, images to a HTML element o
 
 jCallout is jQuery implementation of callouts.
 
-Here is a <a href="http://jsfiddle.net/anupamsm/r2hKN/1/embedded/result/">basic demo</a> (I'll be updating this page with the version releases)
+Here is a <a href="http://jsfiddle.net/anupamsm/zdbpj/embedded/result/">basic demo</a> (I'll be updating this page with the version releases)
 
 <b>Advantages</b>
 <ul>
