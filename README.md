@@ -29,4 +29,13 @@ $('#testDiv').jCallout({
  });
 </pre>
 
+Events:
+<pre>
+$('.test4').jCallout('hide');//hide callout associated with the selected element(s)
+</pre>
+
+<pre>
+$('.test4').jCallout('show');//show callout associated with the selected element(s)
+</pre>
+
 Future releases will have more options and event handling 
