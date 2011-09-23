@@ -5,6 +5,7 @@ jCallout is jQuery implementation of callouts.
 Here is a **[Live Demo](http://jsfiddle.net/anupamsm/zdbpj/5/embedded/result/)** (I'll be updating this page with further version releases)
 
 **Advantages**
+
 * Easy to use and implement
 * Only CSS+JQuery implementation (no images required).
 * Customizable options
