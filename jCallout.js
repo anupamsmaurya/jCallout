@@ -1,12 +1,17 @@
 (function($) {
     var methods = {
         init: function(options) {
+            methods.initWithoutShow.apply(this, arguments);
+            methods.show.apply(this, arguments);
+        },
+        initWithoutShow: function(options) {
             var defaults = {
                 message: "no message given",
                 position: 'top',
                 backgroundColor: '#8F8F8F',
                 borderColor: '7992B0',
                 textColor: '#fff',
+                $closeElement: $('<span style="float: right">(X)</span>')
             };
 
             var options = $.extend(defaults, options);
@@ -16,8 +21,8 @@
                 var obj = $(this);
                 var msg = o.message;
                 var obj_position = obj.position();
-
-                var containerDiv = $('<div class="callout">').append('<b class="notch"></b>' + msg);
+                var containerDiv = $('<div class="callout">').append(o.$closeElement).append('<b class="notch"></b>' + msg);
+                o.$closeElement.click(function() { methods.hide.apply(obj) });
                 containerDiv.css({
                     'background-color': o.backgroundColor,
                     'border-color': o.borderColor,
@@ -87,7 +92,6 @@
                     break;
                 }
                 containerDiv.hide();
-                containerDiv.fadeIn(3000);
             });
         },
         hide: function() {
