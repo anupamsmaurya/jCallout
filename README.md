@@ -36,6 +36,11 @@ $testDiv.jCallout('initWithoutShow', { message: 'Hello world!' });
 $testDiv.click(function() { $testDiv.jCallout('show'); });
 ```
 
+Supressing the "close" button:
+```javascript
+$testDiv.jCallout({ message: 'Hello world!', $closeElement: $('') });
+```
+
 Events:
 <pre>
 $('.test4').jCallout('hide');//hide callout associated with the selected element(s)
