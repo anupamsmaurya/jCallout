@@ -1,6 +1,10 @@
 (function($) {
     var methods = {
         init: function(options) {
+            methods.initWithoutShow.apply(this, arguments);
+            methods.show.apply(this, arguments);
+        },
+        initWithoutShow: function(options) {
             var defaults = {
                 message: "no message given",
                 position: 'top',
@@ -87,7 +91,6 @@
                     break;
                 }
                 containerDiv.hide();
-                containerDiv.fadeIn(3000);
             });
         },
         hide: function() {

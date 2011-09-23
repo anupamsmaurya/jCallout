@@ -29,6 +29,13 @@ $('#testDiv').jCallout({
  });
 </pre>
 
+Click to open:
+```javascript
+var $testDiv = $('#testDiv');
+$testDiv.jCallout('initWithoutShow', { message: 'Hello world!' });
+$testDiv.click(function() { $testDiv.jCallout('show'); });
+```
+
 Events:
 <pre>
 $('.test4').jCallout('hide');//hide callout associated with the selected element(s)
