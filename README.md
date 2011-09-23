@@ -2,16 +2,14 @@ Callout is a balloon div that connects text, symbols, images to an element or a 
 
 jCallout is jQuery implementation of callouts.
 
-Here is a <b><a href="http://jsfiddle.net/anupamsm/zdbpj/5/embedded/result/">Live Demo</a></b> (I'll be updating this page with further version releases)
+Here is a **[Live Demo](http://jsfiddle.net/anupamsm/zdbpj/5/embedded/result/)** (I'll be updating this page with further version releases)
 
-<b>Advantages</b>
-<ul>
-<li>Easy to use and implement</li>
-<li>Only CSS+JQuery implementation (no images required).</li>
-<li>Customizable options</li>
-</ul>
+**Advantages**
+* Easy to use and implement
+* Only CSS+JQuery implementation (no images required).
+* Customizable options
 
-<b>Usage</b>
+**Usage**
 
 Basic:
 <pre>
@@ -30,23 +28,24 @@ $('#testDiv').jCallout({
 </pre>
 
 Click to open:
-```javascript
+<pre>
 var $testDiv = $('#testDiv');
 $testDiv.jCallout('initWithoutShow', { message: 'Hello world!' });
 $testDiv.click(function() { $testDiv.jCallout('show'); });
-```
+</pre>
 
 Supressing the "close" button:
-```javascript
+<pre>
 $testDiv.jCallout({ message: 'Hello world!', $closeElement: $('') });
-```
+</pre>
+
 Using the 'close' icon from JQuery UI:
-```javascript
+<pre>
 $testDiv.jCallout({
    message: tipText,
    $closeElement: $('<span/>', {'class':'ui-icon ui-icon-circle-close','style':'float: right'})
 })
-```
+</pre>
 
 Events:
 <pre>
