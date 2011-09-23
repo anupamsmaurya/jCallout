@@ -40,6 +40,13 @@ Supressing the "close" button:
 ```javascript
 $testDiv.jCallout({ message: 'Hello world!', $closeElement: $('') });
 ```
+Using the 'close' icon from JQuery UI:
+```javascript
+$testDiv.jCallout({
+   message: tipText,
+   $closeElement: $('<span/>', {'class':'ui-icon ui-icon-circle-close','style':'float: right'})
+})
+```
 
 Events:
 <pre>
