@@ -11,7 +11,7 @@
                 backgroundColor: '#8F8F8F',
                 borderColor: '7992B0',
                 textColor: '#fff',
-                $closeElement: $('<span style="float: right">(X)</span>')
+                $closeElement: $('<span style="float: right; cursor: pointer">(X)</span>')
             };
 
             var options = $.extend(defaults, options);
