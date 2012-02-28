@@ -26,7 +26,11 @@ With options:
        position:"right", //other possible values- 'top', 'bottom', 'left'
        backgroundColor:"cyan", //hex code can be used
        textColor:"#fff",
-       borderColor:"cyan"
+       borderColor:"cyan",
+       showEffect:"blind", //see http://jqueryui.come/demos/show/ for other possible values
+       showSpeed:500, //500 miliseconds
+       hideEffect:"explode", //see http://jqueryui.come/demos/hide/ for other possible values
+       hideSpeed:"fast"
     });
 ```
 
